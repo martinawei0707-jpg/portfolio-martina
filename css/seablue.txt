@@ -1,0 +1,20 @@
+/* B：清澈海藍 */
+:root {
+  color-scheme: light;
+
+  --ink: #183B59;
+  --muted: #455B70;
+  --bg: #FFFFFF;
+  --surface: #FFFFFF;
+  --line: #CBDDEA;
+  --side: #E4F2FA;
+
+  --accent: #155B86;
+  --accent-deep: #12496E;
+  --warm: #92502B;
+  --focus: #A63820;
+
+  font-family: system-ui, -apple-system,
+    "Segoe UI", "Noto Sans TC", sans-serif;
+  line-height: 1.75;
+}

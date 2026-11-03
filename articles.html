@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="黃筱崴的 FDE101 前端實作、跨領域轉職作品與活動紀錄。">
+
+  <title>多元反思｜黃筱崴的個人網站</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- 跳至主要內容：無障礙功能 -->
+  <a class="skip-link" href="#main-content">
+    跳至主要內容
+  </a>
+
+  <div class="site-layout">
+
+    <!-- 左側固定導覽列 -->
+    <header class="sidebar">
+
+      <!-- 網站品牌名稱 -->
+      <div class="brand">
+        <a class="brand-title" href="index.html">
+          Martina HUANG<span class="brand-dot">.</span>
+        </a>
+      </div>
+
+      <!-- 網站主要導覽 -->
+      <nav aria-label="網站主要導覽">
+        <ul class="site-nav">
+
+          <li>
+            <a href="index.html">
+              <span class="nav-symbol" aria-hidden="true">⌂</span>
+              <span>首頁</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              <span class="nav-symbol" aria-hidden="true">◌</span>
+              <span>關於我</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="skills.html">
+              <span class="nav-symbol" aria-hidden="true">⌘</span>
+              <span>技術能力</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="projects.html">
+              <span class="nav-symbol" aria-hidden="true">▦</span>
+              <span>專案作品</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="articles.html" aria-current="page">
+              <span class="nav-symbol" aria-hidden="true">▤</span>
+              <span>多元反思</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              <span class="nav-symbol" aria-hidden="true">✉</span>
+              <span>聯絡我</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- 側邊欄底部資訊 -->
+      <div class="sidebar-bottom">
+        <span class="status-dot" aria-hidden="true"></span>
+        由學習走向實作<br>
+        <small>FDE101 · 個人作品集</small>
+      </div>
+
+    </header>
+
+    <!-- 右側主要內容 -->
+    <main id="main-content" tabindex="-1" class="page-content">
+
+      <!-- 頁面標題 -->
+      <div class="page-heading">
+        <h1>多元反思紀錄</h1>
+
+        <p class="lead">
+          一路走走停停，輾轉於不同的地方，做過各式各樣的工作，也在一次次相遇與告別之間，悄悄收藏許多故事。
+        </p>
+      </div>
+
+      <!-- 文章列表與篩選 -->
+      <section aria-labelledby="article-list-title">
+
+        <!-- 搜尋及分類工具 -->
+        <div class="filter-panel">
+
+          <h2 id="article-list-title">紀錄列表</h2>
+
+          <!-- 關鍵字搜尋 -->
+          <label for="article-search">搜尋主題</label>
+
+          <input
+            id="article-search"
+            type="search"
+            placeholder="輸入標題或關鍵字"
+            autocomplete="off"
+          >
+
+          <!-- 文章分類按鈕 -->
+          <div
+            class="filter-buttons"
+            role="group"
+            aria-label="依主題篩選文章"
+          >
+            <button
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              全部
+            </button>
+
+            <button
+              type="button"
+              data-filter="activity"
+              aria-pressed="false"
+            >
+              活動紀錄
+            </button>
+
+            <button
+              type="button"
+              data-filter="accessibility"
+              aria-pressed="false"
+            >
+              身障共融
+            </button>
+
+            <button
+              type="button"
+              data-filter="learning"
+              aria-pressed="false"
+            >
+              技術學習
+            </button>
+          </div>
+
+          <!-- 篩選結果：無障礙即時訊息 -->
+          <p
+            id="filter-result"
+            class="result-count"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            目前顯示 4 篇紀錄
+          </p>
+
+        </div>
+
+        <!-- 文章卡片列表 -->
+        <div class="article-grid" id="article-list">
+		  <!-- 文章 05：普惠體驗 -->
+          <article
+            class="article-card"
+            data-category="activity"
+            data-search="普惠體驗 生活經驗 無障礙 關卡"
+          >
+
+            <h3>
+              <a href="articles/theatre-control-2026hakka.html">
+                在舞台的另一端，與三千張簡報交手
+              </a>
+            </h3>
+
+            <p>
+              一場演出背後，關於畫面、臨場反應，以及那罐差點來不及喝的抹茶牛奶。<br>
+			  從檔案版本錯誤、沒有對講機的控制台，到演員即興時的字幕切換。這是一場演出背後，那些看不見的忙碌與判斷。
+            </p>
+
+            <div class="pill-group">
+				<span class="pill">活動紀錄</span>
+				<span class="pill">劇場幕後</span>
+				<span class="pill">舞台投影</span>
+			</div>
+			
+			<span class="readmore">
+              閱讀紀錄
+              <span aria-hidden="true">→</span>
+            </span>
+          </article>
+		  
+          <!-- 文章 04：電腦技術學習 -->
+          <article
+            class="article-card"
+            data-category="learning"
+            data-search="FDE101 前端 JavaScript Git GitHub HTML CSS"
+          >
+
+            <h3>
+              <a href="articles/ip-troubleshooting.html">
+                那時候，我還不太懂什麼是固定 IP
+              </a>
+            </h3>
+
+            <p>
+              從教授辦公室的網路斷線，談一場意外開始的問題排查。
+			  教授辦公室的網路總是斷線，換線、重開機卻都找不到問題。
+			  直到另一間教室也出現類似狀況，我才想起一台影印機留下的提示，
+			  開始懷疑兩個地方的網路問題或許有所關聯。
+            </p>
+
+            <div class="pill-group">
+				<span class="pill">技術學習</span>
+			</div>
+			
+			<span class="readmore">
+              閱讀紀錄
+              <span aria-hidden="true">→</span>
+            </span>
+          </article>
+		  
+		  <!-- 文章 03：普惠體驗 -->
+          <article
+            class="article-card"
+            data-category="accessibility"
+            data-search="普惠體驗 生活經驗 無障礙 關卡"
+          >
+
+            <h3>
+              <a href="articles/inclusive-design.html">
+                從生活經驗到普惠體驗關卡
+              </a>
+            </h3>
+
+            <p>
+              從真實生活需求出發，設計讓不同年齡層都能參與的體驗活動
+            </p>
+
+            <div class="pill-group">
+				<span class="pill">文化平權</span>
+				<span class="pill">身障共融</span>
+			</div>
+			
+			<span class="readmore">
+              閱讀紀錄
+              <span aria-hidden="true">→</span>
+            </span>
+          </article>
+
+          <!-- 文章 02：共融戲劇 -->
+          <article
+            class="article-card"
+            data-category="accessibility"
+            data-search="共融戲劇 排練 團隊 活動"
+          >
+
+            <h3>
+              <a href="articles/theatre.html">
+                在不同身體節奏裡一起排練
+              </a>
+            </h3>
+
+            <p>
+              從道具、走位到團隊默契，一場共融演出需要反覆調整與溝通。
+            </p>
+
+            <div class="pill-group">
+				<span class="pill">文化平權</span>
+				<span class="pill">身障共融</span>
+			</div>
+			
+			<span class="readmore">
+              閱讀紀錄
+              <span aria-hidden="true">→</span>
+            </span>
+          </article>
+
+          <!-- 文章 01：前端學習 -->
+          <article
+            class="article-card"
+            data-category="learning"
+            data-search="FDE101 前端 JavaScript Git GitHub HTML CSS"
+          >
+
+            <h3>
+              <a href="articles/first-website.html">
+                我的第一個前端個人網站
+              </a>
+            </h3>
+
+            <p>
+              記錄從開發工具設定、排版設計到無障礙功能的學習歷程。
+            </p>
+
+            <div class="pill-group">
+				<span class="pill">技術學習</span>
+			</div>
+			
+			<span class="readmore">
+              閱讀紀錄
+              <span aria-hidden="true">→</span>
+            </span>
+          </article>
+
+        </div>
+
+        <!-- 無搜尋結果時顯示 -->
+        <p id="no-results" class="empty-message" hidden>
+          沒有符合條件的文字紀錄，請試試其他關鍵字或分類。
+        </p>
+
+      </section>
+
+      <!-- 網站頁尾 -->
+      <footer class="page-footer">
+        <span>© 2026 Martina-wei</span>
+        <span>HTML · CSS · JavaScript 習作</span>
+      </footer>
+
+    </main>
+
+  </div>
+</body>
+
+</html>

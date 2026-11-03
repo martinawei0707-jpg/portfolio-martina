@@ -1,0 +1,20 @@
+ C：象牙白 × 午夜藍 
+root {
+  color-scheme light;
+
+  --ink #202E46;
+  --muted #4D586A;
+  --bg #FFFFFF;
+  --surface #FFFFFF;
+  --line #E0DACD;
+  --side #F5F2EA;
+
+  --accent #243B60;
+  --accent-deep #202E46;
+  --warm #8E492E;
+  --focus #A63820;
+
+  font-family system-ui, -apple-system,
+    Segoe UI, Noto Sans TC, sans-serif;
+  line-height 1.75;
+}
